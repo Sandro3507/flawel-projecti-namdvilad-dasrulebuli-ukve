@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  background-color: #0e1111;
+  color: whitesmoke;
+}
+.header {
+  text-align: center;
+}
+.img {
+  width: 300px;
+}
+.text1{
+  color: rgb(188, 188, 188);
+  letter-spacing: 5px;
+  margin-top: 60px;
+  font-size: 20px;
+}
+.text2{
+  color: gray;
+  letter-spacing: 5px;
+  margin-top: 35px;
+  font-weight: light;
+}
+.header-text{
+  text-align: center;
+}
+.all-episodes{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.all-episodes-2row{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.episode{
+  width: 290px;
+  height: 200px;
+  margin-top: 35px;
+}
+.episode-img{
+  width: 283px;
+  border-radius: 20px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+.episode-N{
+  text-align: center;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+.title{
+  font-size: 10px;
+  color: rgb(189, 189, 189);
+  letter-spacing: 0;
+}
+.episode:hover{
+  color: #e50914;
+}
+.bg-modal{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14,17,17,0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.modal-content{
+  width: 850px;
+  height: 450px;
+  background-color: rgb(33, 33, 33);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  position: relative;
+}
+.modal-img{
+  height: 450px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  opacity: 1;
+}
+.modal-p{
+  background-color: rgb(33, 33, 33);
+  margin: auto;
+  color: rgb(182, 182, 182);
+  text-align: center;
+  font-size: 20px;
+  margin-left: 15px;
+  line-height: 32px;
+} 
+.close{
+  position: absolute;
+  top: 5px;
+  right: 19px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  background-color: rgb(33, 33, 33);
+  color: gray;
+  transition: 0.5s;
+}
+.close:hover{
+  transform: rotate(225deg);
+}
+.youtube-recap{
+  height: 500px;
+  width: 850px;
+  margin: auto;
+}
+.music-icon{
+  width: 25px;
+  height: 35px;
+  display: flex;
+  align-items: end;
+  float: right;
+  cursor: pointer;
+  margin-top: 28px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
+.stick{
+  display: block;
+  position: relative;
+  background: #fff;
+  height: 100%;
+  width: 2px;
+  border-radius: 15px;
+  margin: 0 2px;
+  animation: animate 1.2s linear infinite;
+}
+@keyframes animate{
+  50%{
+    height: 20%;
+  }
+  100%{
+    height: 100%;
+  }
+}
+.stick:nth-child(1){
+  animation-delay: 0s;
+}
+.stick:nth-child(2){
+  animation-delay: 0.4s;
+}
+.stick:nth-child(3){
+  animation-delay: 1s;
+}
+.stick:nth-child(4){
+  animation-delay: 0.9s;
+}
+.stick:nth-child(5){
+  animation-delay: 1s;
+}
+.stick:nth-child(6){
+  animation-delay: 0.2s;
+}
+@media screen and (max-width: 900px) {
+  .all-episodes{
+    display: block;
+    width: auto;
+  }
+  .all-episodes-2row{
+    display: block;
+    width: auto;
+  }
+  .episode .header-text{
+    width: 90%;
+  }
+  .modal-content{
+    display: block;
+    height: auto;
+    width: 90%;
+    text-align: center;
+  }
+  .modal-p{
+    font-size: 10px;
+  }
+  .modal-img{
+    height: 50%;
+  }
+  .episode{
+    margin: auto;
+    width: 300px;
+    position: absolute;
+  }
+  .youtube-recap{
+    height: 200px;
+    width: 400px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1400px) {
+  .all-episodes {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    gap: 10%;
+    margin: auto;
+    justify-content: center;
+    width: 100%!important;
+  }
+  .youtube-recap{
+    height: 440px;
+    width: 750px;
+    margin: auto;
+  }
+  .episode {
+    width: 48%; 
+    box-sizing: border-box;        
+    margin: 1%;
+    max-width: 350px!important;
+  }
+  .episode-N{
+    width: 300px;
+  }
+  .episode .header-text {
+    width: 90%;
+  }
+  .all-episodes-2row {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
+    gap: 10%;
+    width: 100%!important;
+    justify-content: center;
+  }
+  .modal-content {
+    display: block;
+    height: auto;
+    width: 70%;
+    text-align: center;
+  }
+  .modal-p {
+    font-size: 15px;
+  }
+  .modal-img {
+    height: 70%;
+  }
+}

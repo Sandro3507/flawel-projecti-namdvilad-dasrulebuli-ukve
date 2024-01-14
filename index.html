@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Main Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <link rel="icon" href="/img/icon.jpg">
+</head>
+<body>
+  <audio id="audio" autoplay src="background-music.mp3"></audio>
+  <div class="header">
+    <img class="header-img" src="img/dark.png" alt="" />
+    <p class="desc">A family saga with a supernatural
+      twist, set in a German town where the disappearance
+      of two young children exposes the relationships
+      among four families.</p>
+    <div class="btns">
+      <button class="genre">Drama</button>
+      <button class="genre">Crime</button>
+      <button class="genre">Mystery</button>
+    </div>
+    <p class="creatorStar">Creators : <span class="x">Baran Bo Odar&middot; Jantje Friese</p></span>
+    <p class="creatorStar">Stars : <span class="x">Louis Hofmann &middot; Lisa Vicari</p></span>
+    <div class="nav-bar-div">
+      <div class="burger-menu" onclick="toggleNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-bar">
+        <li><a class="nav-element" href="html/profiles.html">Character Profiles</a></li>
+        <li><a class="nav-element" href="html/cast.html">Cast</a></li>
+        <li><a class="nav-element" href="html/guide.html">Episodes Guide</a></li>
+        <li><a href="html/contact.html" class="nav-element">Contact</a></li>
+        <div class="links">
+          <a href="https://www.netflix.com/ge/title/80100172"><img class="netflix" src="img/netflix.png"></a>
+          <a href="https://www.instagram.com/darknetflix/"><img src="img/ig.png" class="ig" alt=""></a>
+          <div  onclick="muteMusic()" class="music-icon">
+            <span class="stick"></span>
+            <span class="stick"></span>
+            <span class="stick"></span>
+            <span class="stick"></span>
+            <span class="stick"></span>
+            <span class="stick"></span>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <div class="img-div">
+    <img class="big-img" src="img/mainpageimage.jpg" />
+  </div>
+  <script src="main.js" defer></script>
+</body>
+
+</html>

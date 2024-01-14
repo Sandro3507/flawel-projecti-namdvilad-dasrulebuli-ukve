@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Dark</title>
+  <link rel="icon" href="/img/icon.jpg">
+  <link rel="stylesheet" href="../css/contact.css">
+  <script src="../js/contact.js" defer></script>
+</head>
+<body>
+  <audio id="audio"  autoplay src="../background-music.mp3"></audio>
+  <div class="header-div">
+    <ul>  
+      <li><a href="../index.html"><img class="main-page"  src="../img/dark.png"></a></li>
+    </ul>
+  </div>
+  <p class="contact">CONTACT</p>
+  <div class="form">
+    <div class="top-form">
+      <input class="name" type="text" placeholder="First Name">
+      <input class="name" type="text" placeholder="Last Name">
+    </div>
+    <div class="middle-form">
+      <input class="email" type="email" placeholder="Enter you Email">
+    </div>
+    <div class="middle-bottom">
+      <input class="email" type="text" placeholder="Subject">
+    </div>
+    <div class="bottom-form">
+      <input class="message" type="text" placeholder="message">
+    </div>
+    <div class="btn-div">
+      <button onclick="sended()" class="btn" id="btn">
+        Send Message
+      </button>
+    </div>
+  </div>
+  <div  onclick="muteMusic()" class="music-icon">
+    <span class="stick"></span>
+    <span class="stick"></span>
+    <span class="stick"></span>
+    <span class="stick"></span>
+    <span class="stick"></span>
+    <span class="stick"></span>
+  </div>
+</body>
+</html>
